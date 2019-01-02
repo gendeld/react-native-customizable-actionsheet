@@ -135,7 +135,8 @@ export default class ReactNativeCustomizableActionSheet extends Component {
         transparent={true}
         onRequestClose={this._toggle}
       >
-        <SafeAreaView style={{flex: 1, flexDirection: 'row', backgroundColor: 'rgba(0,0,0,.2)'}}>
+        <SafeAreaView style={{flex: 1, flexDirection: 'row', backgroundColor: 'rgba(0,0,0,.2)'}} 
+          forceInset={{ bottom: 'always', top: 'never' }}>
           {/* 遮挡的overlay */}
           <Text onPress={this._toggle} style={{position: 'absolute', top: 0, right: 0, bottom: 0, left: 0}}/>
           <Animated.View
