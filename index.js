@@ -12,9 +12,9 @@ import {
   ScrollView,
   Dimensions,
   Modal,
-  SafeAreaView,
-  Easing
+  Easing,
 } from 'react-native';
+import SafeAreaView from 'react-native-safe-area-view';
 import PropTypes from 'prop-types';
 const MIN_WIDTH = 1/PixelRatio.get();
 const { width: SCREEN_WIDTH, height: SCREEN_HEIGHT } = Dimensions.get('window');
